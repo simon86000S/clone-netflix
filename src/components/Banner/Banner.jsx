@@ -9,6 +9,7 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundImage: `url("https://i.pinimg.com/736x/1d/cd/88/1dcd88d134b46b3cfd59058e41d1b1fa.jpg")`,
         backgroundPosition: "center center",
+        backgroundColor:"black"
       }}
     >
       <div className="banner-content">
