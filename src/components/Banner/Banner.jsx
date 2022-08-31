@@ -1,9 +1,32 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../../components/Banner/Banner.scss";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoIcon from '@mui/icons-material/Info';
+import requests from "../Request";
+import axios from "../axios";
 
 const Banner = () => {
+const [movie, setMovie] = useState([])
+
+useEffect(() => {
+  async function fetchData(){
+    const request = await axios.get(requests.fetchNetflixOriginals)
+    setMovie(request.data.results
+      
+      [
+        Math.floor(Math.random()*request.data.results.length - 1)
+      ]);
+     
+      return request;
+      
+    }
+      
+fetchData();
+
+}, [])
+console.log(movie)
+
+
   function truncate(string ,n){
 return string?.length>n ? string.substr(0,n-1)+'......':string
 
@@ -14,13 +37,14 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://i.pinimg.com/736x/1d/cd/88/1dcd88d134b46b3cfd59058e41d1b1fa.jpg")`,
+        backgroundImage: `url("https://images.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
         backgroundColor:"black"
       }}
     >
+       
       <div className="banner-content">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">Movie  {movie?.title}</h1>
          <div className="banner_desc">
         <h1 className="banner_desc_text">
          {truncate(
@@ -31,19 +55,18 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
           this a descrpitionthis a descrpitionthis a descrpition`
          ,150)}
         </h1>
-    
+  
 
       </div>
         <div className="banner__buttons">
         <button className="banner__button"><PlayArrowIcon style={{paddingRight:'5px',height:"100px",width:'40px'}}/>Lecture</button>
           <button className="banner__button"><InfoIcon style={{paddingRight:'5px',height:"100px",width:'40px'}}/>Plus d'Infos</button>
         </div>
+    
        
+        
       </div>
-      <div className="banner_bottom">
-
-      </div>
-      
+      <div className="fade_bottom"></div>
     </div>
   )
          ;
