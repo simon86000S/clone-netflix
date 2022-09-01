@@ -71,9 +71,13 @@
 @media screen and (max-width: 1100px) {
   .left .NavBar li {
     display: none;
+   
   }
   .nav__contents .right {
-    left: 96px;
+    left: 87px;
+    span{
+      font-size: 12px;
+    }
   }
   .nav__logo {
     position: fixed;

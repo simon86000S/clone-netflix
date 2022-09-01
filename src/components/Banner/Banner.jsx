@@ -36,6 +36,7 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
     <div
       className="banner"
       style={{
+        
         backgroundSize: "cover",
         backgroundImage: `url("https://images.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
@@ -64,9 +65,9 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
         </div>
     
        
-        
+        <div className="fade_bottom"></div>
       </div>
-      <div className="fade_bottom"></div>
+     
     </div>
   )
          ;
