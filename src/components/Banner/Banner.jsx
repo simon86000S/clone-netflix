@@ -45,16 +45,10 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
     >
        
       <div className="banner-content">
-        <h1 className="banner__title">Movie  {movie?.title}</h1>
+        <h1 className="banner__title"> {movie?.title || movie?.name ||movie.original_name}</h1>
          <div className="banner_desc">
         <h1 className="banner_desc_text">
-         {truncate(
-          `this a descrpition this a descrpition this a descrpition this a descrpition
-          this a descrpition this a descrpitionthis a descrpition this a descrpition
-          this a descrpitionthis a descrpitionthis a descrpitionthis a descrpitionthis a descrpition
-          this a descrpitionthis a descrpitionthis a descrpitionthis a descrpition
-          this a descrpitionthis a descrpitionthis a descrpition`
-         ,150)}
+         {truncate(movie?.overview,150)}
         </h1>
   
 
