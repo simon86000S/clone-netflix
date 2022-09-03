@@ -59,9 +59,9 @@ return string?.length>n ? string.substr(0,n-1)+'......':string
         </div>
     
        
-        <div className="fade_bottom"></div>
+        
       </div>
-     
+      <div className="fade_bottom"></div>
     </div>
   )
          ;

@@ -47,15 +47,15 @@ const NavBar = () => {
 
       <div className='right'>
         <div className='content-right'>
-      <SearchOutlinedIcon/>
+      <SearchOutlinedIcon style={{marginTop:'-4px'}}/>
       <span>DIRECT</span>
       <span>Jeunesse</span>
-      < NotificationsNoneOutlinedIcon/>
+      < NotificationsNoneOutlinedIcon style={{marginTop:'-4px'}}/>
     
         <img  className='nav__avatar'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviOG6uGtnghbCeHEZQmBH1HTOqP07nvNYlXL2KBFCEE61w3Defy_jtsiMpTWy7Q2A2cQ&usqp=CAU'
         alt=''
         />
-        <ArrowDropDownOutlinedIcon/>
+        <ArrowDropDownOutlinedIcon style={{marginTop:'-6px'}}/>
         </div>
         </div>
         </div>
