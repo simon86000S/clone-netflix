@@ -5,14 +5,16 @@ import Banner from "../Banner/Banner";
 import requests from "../Request";
 import Row from "../Row/row";
 
-const Home = () => {
+
+  const Home=()=>{
   return (
     <div className="home">
       <NavBar />
 
       <Banner />
-      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals}>
-        isLargeRow
+      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} >
+       
+        
       </Row>
       <Row title="Trending Now" fetchURL={requests.fetchTrending}></Row>
       <Row title="Top rated" fetchURL={requests.fetchTopRated}></Row>
