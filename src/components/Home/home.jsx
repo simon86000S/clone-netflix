@@ -12,7 +12,7 @@ import Row from "../Row/row";
       <NavBar />
 
       <Banner />
-      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} >
+      <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow >
        
         
       </Row>
