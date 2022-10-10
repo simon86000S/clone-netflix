@@ -8,7 +8,7 @@ const NavBar = () => {
     const [show,handleShow]=useState(false)
 
     const transitionNavBar=()=>{
-        if(window.scrollY<100){
+        if(window.scrollY>100){
             handleShow(true)
 
         }else{
@@ -33,7 +33,7 @@ const NavBar = () => {
         alt=''>
       </img>
       <ul className='NavBar'>
-        <li>Accueil</li>
+         <li>Accueil</li>
         <li>Séries</li>
         <li>Films</li>
         <li>Nouveauté les plus regardées</li>

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import "../../components/Banner/Banner.scss";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoIcon from '@mui/icons-material/Info';
-import requests from "../Request";
+import requests from '../request';
 import axios from "../axios";
 
 const Banner = () => {
@@ -11,6 +11,7 @@ const [movie, setMovie] = useState([])
 useEffect(() => {
   async function fetchData(){
     const request = await axios.get(requests.fetchNetflixOriginals)
+   
     setMovie(request.data.results
       
       [

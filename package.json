@@ -1,6 +1,6 @@
 {
-  "homepage": "https://simon86000S.github.io/movie",
-  "name": "movies",
+  "homepage": "https://simon86000S.github.io/clone-netflix",
+  "name": "clone-netflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -50,6 +50,6 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
-    "sass": "^1.54.5"
+    "sass": "^1.55.0"
   }
 }
